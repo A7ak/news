@@ -20,7 +20,7 @@ class Viewmodel @Inject constructor(
 
     fun getNews() {
         viewModelScope.launch(Dispatchers.IO) {
-            _newsLiveData.value = myRepo.getNews().body()
+            _newsLiveData.postValue(myRepo.getNews().body())
         }
     }
 }
