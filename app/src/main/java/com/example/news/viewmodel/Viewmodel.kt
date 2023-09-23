@@ -7,6 +7,7 @@ import androidx.lifecycle.viewModelScope
 import com.example.news.interfaces.MyRepo
 import com.example.news.model.NewsRes
 import dagger.hilt.android.lifecycle.HiltViewModel
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
@@ -18,7 +19,7 @@ class Viewmodel @Inject constructor(
     val newLiveData: LiveData<NewsRes> get() = _newsLiveData
 
     fun getNews() {
-        viewModelScope.launch() {
+        viewModelScope.launch(Dispatchers.IO) {
             _newsLiveData.value = myRepo.getNews().body()
         }
     }
