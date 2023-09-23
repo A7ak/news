@@ -1,6 +1,6 @@
-package com.example.interfaces
+package com.example.news.interfaces
 
-import com.example.model.NewsRes
+import com.example.news.model.NewsRes
 import retrofit2.Response
 
 interface MyRepo {

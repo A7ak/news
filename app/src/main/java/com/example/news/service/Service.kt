@@ -1,6 +1,6 @@
-package com.example.service
+package com.example.news.service
 
-import com.example.model.NewsRes
+import com.example.news.model.NewsRes
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

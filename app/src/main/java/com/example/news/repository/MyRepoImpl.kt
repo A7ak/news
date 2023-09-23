@@ -1,8 +1,8 @@
-package com.example.repository
+package com.example.news.repository
 
-import com.example.interfaces.MyRepo
-import com.example.model.NewsRes
-import com.example.service.Service
+import com.example.news.interfaces.MyRepo
+import com.example.news.model.NewsRes
+import com.example.news.service.Service
 import retrofit2.Response
 import javax.inject.Inject
 class MyRepoImpl @Inject constructor(val service: Service) : MyRepo {

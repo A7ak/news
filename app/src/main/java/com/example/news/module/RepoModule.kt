@@ -1,7 +1,7 @@
-package com.example.module
+package com.example.news.module
 
-import com.example.interfaces.MyRepo
-import com.example.repository.MyRepoImpl
+import com.example.news.interfaces.MyRepo
+import com.example.news.repository.MyRepoImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

@@ -1,11 +1,11 @@
-package com.example.viewmodel
+package com.example.news.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.interfaces.MyRepo
-import com.example.model.NewsRes
+import com.example.news.interfaces.MyRepo
+import com.example.news.model.NewsRes
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import javax.inject.Inject

@@ -1,7 +1,7 @@
-package com.example.module
+package com.example.news.module
 
-import com.example.service.RetrofitBuilder
-import com.example.service.Service
+import com.example.news.service.RetrofitBuilder
+import com.example.news.service.Service
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
